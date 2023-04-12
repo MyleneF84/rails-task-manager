@@ -1,7 +1,7 @@
 <h1><%= @task.title %></h1>
 <p><%= @task.details %></p>
 <p>
-   <%= check_box_tag('completed', value = "1", checked = @task.completed)%>
+   <%#= check_box_tag('completed', value = "1", checked = @task.completed)%>
 <% if @task.completed %>
   <p><%='This task has been completed'%></p>
 <% else%>
