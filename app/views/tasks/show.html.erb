@@ -3,9 +3,9 @@
 <p>
    <%#= check_box_tag('completed', value = "1", checked = @task.completed)%>
 <% if @task.completed %>
-  <p><%='This task has been completed'%></p>
+  <p><%='This task has been completed 🥳'%></p>
 <% else%>
-  <p><%= 'This task is not done yet !'%></p>
+  <p><%= 'This task is not done yet 😬!'%></p>
 <% end %>
    </p>
    <%= link_to "Edit this task", edit_task_path %>

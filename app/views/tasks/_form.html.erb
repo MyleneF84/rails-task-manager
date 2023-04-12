@@ -10,11 +10,11 @@
   </div>
 
   <% unless f.object.new_record? %>
-    <div class="checkbox">
-      <label>
-        <%= f.check_box :completed %> Completed
-      </label>
+    <div class="form-check form-switch">
+      <%= f.check_box :completed, class: "form-check-input", role: "switch", id: "flexSwitchCheckDefault" %>
+      <label class="form-check-label" for="flexSwitchCheckDefault">Completed</label>
     </div>
   <% end %>
+  
   <%= f.submit class: 'btn btn-primary mt-3' %>
 <% end %>
